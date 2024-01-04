@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		/* base options */
+		"baseUrl": "./src/",
+		"outDir": "./dist/",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		
+		/* transpilation */
+		"lib": [ "ES2022" ],
+		"target": "ES2022",
+		"module": "ES2020",
+		"moduleResolution": "Node",
+		"declaration": true,
+		
+		/* strictness */
+		"strict": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+	},
+	"include": [
+		"./src/**/*.ts"
+	]
+}
