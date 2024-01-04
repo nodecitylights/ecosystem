@@ -1,5 +1,7 @@
 # neoncitylights/js-eco
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+
 A comparison of tools within the JS ecosystem.
 
 ## Structure
