@@ -1,0 +1,29 @@
+{
+	"private": true,
+	"version": "1.0.0",
+	"name": "node-ts-esm-rollup",
+	"description": "Node, TypeScript (ESM), Rollup",
+	"type": "module",
+	"types": "dist/index.d.ts",
+	"module": "dist/index.js",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rollup --config rollup.config.ts --configPlugin typescript",
+		"dev": "rollup -c -w"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^11.1.6",
+		"rollup": "^4.9.5",
+		"rollup-plugin-dts": "^6.1.0",
+		"tslib": "^2.6.2",
+		"typescript": "^5.3.3"
+	}
+}
