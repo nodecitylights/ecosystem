@@ -1,0 +1,27 @@
+{
+	"private": true,
+	"version": "1.0.0",
+	"name": "node-ts-esm-esbuild",
+	"description": "Node, TypeScript (ESM), esbuild",
+	"type": "module",
+	"types": "dist/index.d.ts",
+	"module": "dist/index.mjs",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "npm run build:prod",
+		"build:prod": "esbuild src/index.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16",
+		"build:dev": "esbuild src/index.ts --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16"
+	},
+	"devDependencies": {
+		"esbuild": "0.19.11",
+		"typescript": "^5.3.3"
+	}
+}
