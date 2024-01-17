@@ -2,5 +2,14 @@
 	"private": true,
 	"workspaces": [
 		"libs/*"
-	]
+	],
+	"scripts": {
+		"build": "npm run build -ws --if-present",
+		"clean": "rm -rf ./node_modules && rm -rf ./package-lock.json",
+		"publint": "npm run publint -ws --if-present",
+		"prepublish": "npm run publint"
+	},
+	"devDependencies": {
+		"publint": "^0.2.7"
+	}
 }

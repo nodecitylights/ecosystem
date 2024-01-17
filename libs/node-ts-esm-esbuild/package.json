@@ -19,7 +19,9 @@
 		"build": "npm run build:prod",
 		"build:prod": "npm run types && esbuild src/index.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outdir=dist",
 		"build:dev": "npm run types && esbuild src/index.ts --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --outdir=dist",
-		"types": "tsc"
+		"types": "tsc",
+		"prepublint": "npm run build",
+		"publint": "publint ."
 	},
 	"devDependencies": {
 		"esbuild": "0.19.11",

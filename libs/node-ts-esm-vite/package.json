@@ -16,7 +16,9 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "vite build"
+		"build": "vite build",
+		"prepublint": "npm run build",
+		"publint": "publint ."
 	},
 	"devDependencies": {
 		"@types/node": "^20.11.4",

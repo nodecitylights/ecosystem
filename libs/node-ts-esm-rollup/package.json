@@ -17,7 +17,9 @@
 	],
 	"scripts": {
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
-		"dev": "npm run build -- -w"
+		"dev": "npm run build -- -w",
+		"prepublint": "npm run build",
+		"publint": "publint ."
 	},
 	"devDependencies": {
 		"@rollup/plugin-typescript": "^11.1.6",

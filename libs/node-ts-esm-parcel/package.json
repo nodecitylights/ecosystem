@@ -4,15 +4,23 @@
 	"name": "node-ts-esm-parcel",
 	"description": "Node, TypeScript (ESM), Parcel",
 	"type": "module",
-	"source": "src/index.ts",
-	"module": "dist/module.js",
-	"types": "dist/types.d.ts",
+	"source": "./src/index.ts",
+	"types": "./dist/types.d.ts",
+	"module": "./dist/module.js",
+	"exports": {
+		".": {
+			"types": "./dist/types.d.ts",
+			"import": "./dist/module.js"
+		}
+	},
 	"files": [
 		"dist"
 	],
 	"scripts": {
 		"build": "parcel build --cache-dir ./.parcel-cache",
-		"dev": "parcel watch --cache-dir ./.parcel-cache"
+		"dev": "parcel watch --cache-dir ./.parcel-cache",
+		"prepublint": "npm run build",
+		"publint": "publint ."
 	},
 	"devDependencies": {
 		"@parcel/packager-ts": "^2.11.0",
