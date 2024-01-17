@@ -5,11 +5,11 @@
 	"description": "Node, TypeScript (ESM), esbuild",
 	"type": "module",
 	"types": "dist/index.d.ts",
-	"module": "dist/index.mjs",
+	"module": "dist/index.js",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
-			"import": "./dist/index.mjs"
+			"import": "./dist/index.js"
 		}
 	},
 	"files": [
@@ -17,8 +17,8 @@
 	],
 	"scripts": {
 		"build": "npm run build:prod",
-		"build:prod": "esbuild src/index.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16",
-		"build:dev": "esbuild src/index.ts --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16"
+		"build:prod": "esbuild src/index.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outdir=dist",
+		"build:dev": "esbuild src/index.ts --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --outdir=dist"
 	},
 	"devDependencies": {
 		"esbuild": "0.19.11",
