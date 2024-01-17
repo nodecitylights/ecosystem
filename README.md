@@ -7,6 +7,7 @@ A comparison of tools within the JS ecosystem.
 ## Structure
 
 At the moment, the top-level directories include:
+
 - `/unit-testing`: Comparison of unit testing frameworks
 - `/e2e-testing`: Comparsion of e2e testing frameworks
 - `/libs`: Comparison of build tools for creating distributable libraries
@@ -15,7 +16,7 @@ At the moment, the top-level directories include:
 
 Each subdirectory name in the repository generally follows the naming convention below:
 
-```
+```txt
 {{runtime}}-{{module-system}}-{{type}}-{{tools+}}
 ```
 
