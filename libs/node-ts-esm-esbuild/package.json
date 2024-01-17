@@ -17,8 +17,9 @@
 	],
 	"scripts": {
 		"build": "npm run build:prod",
-		"build:prod": "esbuild src/index.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outdir=dist",
-		"build:dev": "esbuild src/index.ts --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --outdir=dist"
+		"build:prod": "npm run types && esbuild src/index.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outdir=dist",
+		"build:dev": "npm run types && esbuild src/index.ts --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --outdir=dist",
+		"types": "tsc"
 	},
 	"devDependencies": {
 		"esbuild": "0.19.11",
