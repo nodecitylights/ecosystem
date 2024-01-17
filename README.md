@@ -35,7 +35,7 @@ Each subdirectory name in the repository generally follows the naming convention
 
 ## License
 
-This library is licensed under the MIT license ([`LICENSE-MIT`](./LICENSE) or <http://opensource.org/licenses/MIT>).
+This repository is licensed under the MIT license ([`LICENSE-MIT`](./LICENSE) or <http://opensource.org/licenses/MIT>).
 
 ### Contribution
 
