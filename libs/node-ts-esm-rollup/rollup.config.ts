@@ -5,26 +5,12 @@ import { dts } from "rollup-plugin-dts";
 export default defineConfig([
 	{
 		input: 'src/index.ts',
-		output: [
-			{
-				file: 'dist/index.js',
-				format: 'esm',
-			},
-		],
-		plugins: [
-			typescript(),
-		],
+		output: [{ file: 'dist/index.js', format: 'esm' }],
+		plugins: [typescript()],
 	},
 	{
 		input: 'src/index.ts',
-		output: [
-			{
-				file: 'dist/index.d.ts',
-				format: 'esm',
-			},
-		],
-		plugins: [
-			dts(),
-		],
+		output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+		plugins: [dts()],
 	}
 ])
