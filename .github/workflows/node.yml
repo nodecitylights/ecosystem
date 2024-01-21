@@ -8,12 +8,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-library:
     name: build (Node v@${{ matrix.node-version }})
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [lts/*, latest]
+        workspace:
+          - node-js-cjs-parcel
+          - node-js-cjs-webpack
+          - node-ts-esm-webpack
+          - node-ts-esm-parcel
+          - node-ts-esm-rollup
+          - node-ts-esm-parcel
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,7 +31,8 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Build packages
+      - name: Build library
+        working-directory: ./libs/${{ matrix.workspace }}
         run: npm run build
 
   pkg-dry-run:
