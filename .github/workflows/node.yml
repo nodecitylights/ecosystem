@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-library:
-    name: build (Node v@${{ matrix.node-version }})
+    name: build (Node v@${{ matrix.node-version }} / ${{ matrix.workspace }})
     runs-on: ubuntu-latest
     strategy:
       matrix:
