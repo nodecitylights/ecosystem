@@ -1,0 +1,27 @@
+{
+	"version": "1.0.0",
+	"name": "node-js-cjs-vite",
+	"description": "Node, JavaScript (CommonJS), Vite",
+	"type": "commonjs",
+	"types": "./dist/index.d.ts",
+	"main": "./dist/index.cjs",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "vite build",
+		"prepublint": "npm run build",
+		"publint": "publint ."
+	},
+	"devDependencies": {
+		"typescript": "^5.3.3",
+		"vite": "^5.0.12",
+		"vite-plugin-dts": "^3.7.1"
+	}
+}
