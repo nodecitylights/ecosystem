@@ -8,8 +8,8 @@ A comparison of tools within the JS ecosystem.
 
 At the moment, the top-level directories include:
 
-- `/unit-testing`: Comparison of unit testing frameworks
-- `/e2e-testing`: Comparsion of e2e testing frameworks
+- `/tests/unit/`: Comparison of unit testing frameworks
+- `/tests/e2e/`: Comparsion of e2e testing frameworks
 - `/libs`: Comparison of build tools for creating distributable libraries
 - `/apps`: Comarpsion of web frameworks for creating web applications
 - `/fmtlint`: Comparison of formatting and linting tools
@@ -20,10 +20,10 @@ Each subdirectory name in the repository generally follows the naming convention
 {{runtime}}-{{module-system}}-{{language}}-{{tools+}}
 ```
 
-- `{{runtime}}`: JavaScript runtime implementation > `browser`, `node`, `deno`, `bun`
-- `{{module-system}}`: JavaScript module resolution strategy -> `esm`, `cjs`, `umd`, `amd`
-- `{{language}}`: JavaScript language > `ts`, `js`
-- `{{tools+}}`: 1 or more build tools together (e.g Vite, Parcel, Webpack, esbuild, Rollup, Babel, etc.) If it does not use a build tool, it will say `native` (pure HTML/CSS/JS).
+- `{{runtime}}`: JavaScript runtime implementation. Choices: `browser`, `node`, `deno`, `bun`
+- `{{module-system}}`: JavaScript module resolution strategy. Choices: `esm`, `cjs`, `umd`, `amd`
+- `{{language}}`: JavaScript language. Choices: `ts`, `js`
+- `{{tools+}}`: 1 or more build tools together (e.g. Vite, Parcel, Webpack, esbuild, Rollup, Babel, etc.). If it does not use a build tool, it will say `native` (pure HTML/CSS/JS).
 
 ## Types of tools
 
