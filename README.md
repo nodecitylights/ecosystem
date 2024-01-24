@@ -17,7 +17,7 @@ At the moment, the top-level directories include:
 Each subdirectory name in the repository generally follows the naming convention below:
 
 ```txt
-{{runtime}}-{{module-system}}-{{type}}-{{tools+}}
+{{runtime}}-{{module-system}}-{{language}}-{{tools+}}
 ```
 
 - `{{runtime}}`: JavaScript runtime implementation > `browser`, `node`, `deno`, `bun`
