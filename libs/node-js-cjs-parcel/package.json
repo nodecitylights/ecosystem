@@ -4,10 +4,15 @@
 	"name": "node-js-cjs-parcel",
 	"description": "Node, JavaScript (CommonJS), Parcel",
 	"type": "commonjs",
-	"source": "./src/index.js",
-	"main": "./dist/index.js",
+	"source": "src/index.js",
+	"types": "dist/index.d.ts",
+	"main": "dist/index.js",
+	"targets": {
+		"types": false
+	},
 	"exports": {
 		".": {
+			"types": "./dist/types.d.ts",
 			"require": "./dist/index.js"
 		}
 	},
@@ -15,12 +20,14 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "parcel build --cache-dir ./.parcel-cache",
-		"dev": "parcel watch --cache-dir ./.parcel-cache",
+		"build": "parcel build --no-cache && npm run dts",
+		"dev": "parcel watch --cache-dir ./.parcel-cache && npm run dts",
+		"dts": "tsc",
 		"prepublint": "npm run build",
 		"publint": "publint ."
 	},
 	"devDependencies": {
-		"parcel": "^2.11.0"
+		"parcel": "^2.11.0",
+		"typescript": "^5.3.3"
 	}
 }
