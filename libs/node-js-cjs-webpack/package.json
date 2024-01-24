@@ -17,7 +17,9 @@
 	],
 	"scripts": {
 		"build": "webpack build --mode=production && npm run dts",
-		"dts": "tsc"
+		"dts": "tsc",
+		"prepublint": "npm run build",
+		"publint": "publint ."
 	},
 	"devDependencies": {
 		"typescript": "^5.3.3",
