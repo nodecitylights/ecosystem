@@ -20,7 +20,7 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "parcel build --no-cache && npm run dts",
+		"build": "parcel build --cache-dir ./.parcel-cache && npm run dts",
 		"dev": "parcel watch --cache-dir ./.parcel-cache && npm run dts",
 		"dts": "tsc",
 		"prepublint": "npm run build",
