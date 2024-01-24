@@ -15,6 +15,7 @@ jobs:
       matrix:
         workspace:
           - node-js-cjs-parcel
+          - node-js-cjs-vite
           - node-js-cjs-webpack
           - node-ts-esm-esbuild
           - node-ts-esm-parcel
