@@ -5,13 +5,16 @@
 	"description": "Node, JavaScript (CommonJS), Webpack",
 	"type": "commonjs",
 	"types": "./dist/index.d.ts",
-	"main": "./dist/index.js",
+	"main": "./dist/bundle.js",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
 			"require": "./dist/bundle.js"
 		}
 	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "webpack build --mode=production && npm run dts",
 		"dts": "tsc"
