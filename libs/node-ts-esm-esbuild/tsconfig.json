@@ -39,5 +39,11 @@
 		"sourceMap": true,
 		"emitDeclarationOnly": true,
 		"declaration": true
-	}
+	},
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"build.js"
+	]
 }
