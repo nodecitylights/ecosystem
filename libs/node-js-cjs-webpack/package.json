@@ -5,7 +5,7 @@
 	"description": "Node, JavaScript (CommonJS), Webpack",
 	"type": "commonjs",
 	"types": "./dist/index.d.ts",
-	"main": "./src/index.js",
+	"main": "./dist/index.js",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
