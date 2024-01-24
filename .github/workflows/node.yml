@@ -30,9 +30,6 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Build library
-        working-directory: ./libs/${{ matrix.workspace }}
-        run: npm run build
-      - name: Run publint
+      - name: Build library, run publint
         working-directory: ./libs/${{ matrix.workspace }}
         run: npm run publint
