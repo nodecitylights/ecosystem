@@ -4,6 +4,15 @@
 
 A comparison of tools within the JS ecosystem.
 
+## Develop locally
+
+```shell
+git clone https://github.com/neoncitylights/js-eco.git
+cd js-eco
+npm install --save-exact --save-dev
+npm run build
+```
+
 ## Structure
 
 At the moment, the top-level directories include:
