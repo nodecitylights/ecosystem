@@ -3,6 +3,12 @@
 	"version": "1.0.0",
 	"name": "node-js-cjs-parcel",
 	"description": "Node, JavaScript (CommonJS), Parcel",
+	"keywords": [
+		"node",
+		"javascript",
+		"commonjs",
+		"parcel"
+	],
 	"type": "commonjs",
 	"source": "src/index.js",
 	"types": "dist/index.d.ts",

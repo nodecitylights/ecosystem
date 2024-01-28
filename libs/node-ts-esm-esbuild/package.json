@@ -3,6 +3,12 @@
 	"version": "1.0.0",
 	"name": "node-ts-esm-esbuild",
 	"description": "Node, TypeScript (ESM), esbuild",
+	"keywords": [
+		"node",
+		"typescript",
+		"esm",
+		"esbuild"
+	],
 	"type": "module",
 	"types": "./dist/index.d.ts",
 	"module": "./dist/index.js",

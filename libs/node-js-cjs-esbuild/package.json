@@ -3,6 +3,12 @@
 	"version": "1.0.0",
 	"name": "node-js-cjs-esbuild",
 	"description": "Node, JavaScript (CommonJS), esbuild",
+	"keywords": [
+		"node",
+		"javascript",
+		"commonjs",
+		"esbuild"
+	],
 	"type": "commonjs",
 	"types": "./dist/index.d.ts",
 	"require": "./dist/index.js",
