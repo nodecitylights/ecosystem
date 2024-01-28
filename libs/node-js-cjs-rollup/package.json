@@ -1,0 +1,29 @@
+{
+	"private": true,
+	"version": "1.0.0",
+	"name": "node-js-cjs-rollup",
+	"description": "Node, JavaScript (CommonJS), Rollup",
+	"type": "commonjs",
+	"types": "./dist/index.d.ts",
+	"main": "./dist/index.js",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rollup --config rollup.config.js",
+		"dev": "npm run build -- -w",
+		"prepublint": "npm run build",
+		"publint": "publint ."
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^25.0.7",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"rollup": "^4.9.5"
+	}
+}

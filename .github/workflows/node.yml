@@ -16,6 +16,7 @@ jobs:
         workspace:
           - node-js-cjs-esbuild
           - node-js-cjs-parcel
+          - node-js-cjs-rollup
           - node-js-cjs-vite
           - node-js-cjs-webpack
           - node-ts-esm-esbuild
