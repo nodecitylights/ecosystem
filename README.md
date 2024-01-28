@@ -43,6 +43,12 @@ Each subdirectory name in the repository generally follows the naming convention
 - **E2E testing**: E2E (end-to-end) testing involves testing an application from start to finish to simulate real-life user scenarios. In the JS context, this typically involves spinning up a headless browser instance and testing against the instance.
 - **Benchmarking**: Benchmarking is another name for perfomance testing, which involves measuring the speed of some piece of code in a controlled environment. A benchmarker will typically include statistical measures such as standard deviations and regressions to make sure the benchmarks give accurate reports.
 
+## Questions and answers
+
+- **Why do pure JS libraries still include TypeScript as a developer dependency?**: While the source code may not be written in TypeScript, TypeScript is responsible for generating [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction) (`.d.ts`) during the build process to provide types.
+- **Why does every `package.json` include `"private": true`?**: This monorepo only provides these setups for demonstration purposes. It does not intend to publish them to the NPM registry, hence why the `private` key is set. When you write your own library you'd like to distribute, you should remove this.
+- **Why does every library include `publint` as a developer dependency and script?**: This monorepo uses the publint tool to ensure every setup is guaranteed to be usable when publicly distributed. Check [publint's official website](https://publint.dev/#docs) for more information.
+
 ## License
 
 This repository is licensed under the MIT license ([`LICENSE-MIT`](./LICENSE) or <http://opensource.org/licenses/MIT>).
