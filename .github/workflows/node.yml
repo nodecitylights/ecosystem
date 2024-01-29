@@ -3,8 +3,18 @@ name: Node.js CI
 on:
   push:
     branches: [ main ]
+    paths:
+      - .github/workflows/node.yml
+      - libs/*
+      - package.json
+      - package-lock.json
   pull_request:
     branches: [ main ]
+    paths:
+      - .github/workflows/node.yml
+      - libs/*
+      - package.json
+      - package-lock.json
   workflow_dispatch:
 
 jobs:
