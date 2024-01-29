@@ -21,8 +21,8 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "npm run types && node build.js",
-		"types": "tsc",
+		"build": "npm run dts && node build.js",
+		"dts": "tsc",
 		"prepublint": "npm run build",
 		"publint": "publint ."
 	},
