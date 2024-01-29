@@ -2,7 +2,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-A comparison of tools within the JS ecosystem.
+A comparison of tools within the JS ecosystem. It aims to compare/evaluate the following:
+- How the JavaScript ecosystem evolves over time
+- The most reasonable, minimal configuration setup for a given toolchain
+- Compile & transpilation time
+- Compression/minification of code, compression time
+- For applications: Hot module reloading (HMR) time
 
 ## Develop locally
 
