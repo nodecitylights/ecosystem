@@ -33,6 +33,7 @@ jobs:
           - node-ts-esm-parcel
           - node-ts-esm-rollup
           - node-ts-esm-vite
+          - node-ts-esm-webpack
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
