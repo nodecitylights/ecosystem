@@ -33,6 +33,7 @@ jobs:
           - node-ts-esm-esbuild
           - node-ts-esm-parcel
           - node-ts-esm-rollup
+          - node-ts-esm-tsc
           - node-ts-esm-vite
           - node-ts-esm-webpack
     steps:
