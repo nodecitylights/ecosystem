@@ -23,9 +23,9 @@ npm run build
 At the moment, the top-level directories include:
 
 - `/tests/unit/`: Comparison of unit testing frameworks
-- `/tests/e2e/`: Comparsion of e2e testing frameworks
+- `/tests/e2e/`: Comparison of e2e testing frameworks
 - `/libs`: Comparison of build tools for creating distributable libraries
-- `/apps`: Comarpsion of web frameworks for creating web applications
+- `/apps`: Comparison of web frameworks for creating web applications
 - `/fmtlint`: Comparison of formatting and linting tools
 
 Each subdirectory name in the repository generally follows the naming convention below:
