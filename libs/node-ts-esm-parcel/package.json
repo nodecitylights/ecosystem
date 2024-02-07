@@ -12,6 +12,7 @@
 	"type": "module",
 	"source": "./src/index.ts",
 	"types": "./dist/types.d.ts",
+	"module": "./dist/module.js",
 	"exports": {
 		".": {
 			"types": "./dist/types.d.ts",
