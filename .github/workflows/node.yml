@@ -33,8 +33,6 @@ jobs:
           - node-rollup-js-cjs
           - node-rollup-ts-esm
           - node-rollup-js-esm
-          - node-tsup-js-cjs
-          - node-tsup-js-esm
           - node-tsup-ts-esm
           - node-vite-js-cjs
           - node-vite-ts-esm
