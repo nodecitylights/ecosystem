@@ -40,7 +40,6 @@ jobs:
           - node-vite-js-cjs
           - node-vite-ts-esm
           - node-vite-js-esm
-          - node-tsup-ts-esm
           - node-webpack-js-cjs
           - node-webpack-js-esm
           - node-webpack-ts-esm
