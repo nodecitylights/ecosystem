@@ -32,6 +32,7 @@ jobs:
           - node-js-cjs-webpack
           - node-js-esm-esbuild
           - node-js-esm-parcel
+          - node-js-esm-rollup
           - node-js-esm-vite
           - node-ts-esm-esbuild
           - node-ts-esm-parcel
