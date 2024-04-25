@@ -24,25 +24,25 @@ jobs:
     strategy:
       matrix:
         workspace:
-          - node-js-cjs-esbuild
-          - node-js-cjs-parcel
-          - node-js-cjs-rollup
-          - node-js-cjs-tsc
-          - node-js-cjs-vite
-          - node-js-cjs-webpack
-          - node-js-esm-esbuild
-          - node-js-esm-parcel
-          - node-js-esm-rollup
-          - node-js-esm-tsc
-          - node-js-esm-vite
-          - node-js-esm-webpack
-          - node-ts-esm-esbuild
-          - node-ts-esm-parcel
-          - node-ts-esm-rollup
-          - node-ts-esm-tsc
-          - node-ts-esm-tsup
-          - node-ts-esm-vite
-          - node-ts-esm-webpack
+          - node-esbuild-js-cjs
+          - node-esbuild-js-esm
+          - node-esbuild-ts-esm
+          - node-parcel-js-cjs
+          - node-parcel-ts-esm
+          - node-parcel-ts-esm
+          - node-rollup-js-cjs
+          - node-rollup-ts-esm
+          - node-rollup-js-esm
+          - node-tsc-js-cjs
+          - node-tsc-js-esm
+          - node-tsc-ts-esm
+          - node-tsup-ts-esm
+          - node-vite-js-cjs
+          - node-vite-ts-esm
+          - node-vite-js-esm
+          - node-webpack-js-cjs
+          - node-webpack-js-esm
+          - node-webpack-ts-esm
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
