@@ -3,6 +3,12 @@
 	"version": "1.0.0",
 	"name": "node-js-esm-vite",
 	"description": "Node, JavaScript (ESM), Vite",
+	"keywords": [
+		"node",
+		"javascript",
+		"esm",
+		"vite"
+	],
 	"type": "module",
 	"types": "./dist/index.d.ts",
 	"exports": {
