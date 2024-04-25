@@ -1,6 +1,8 @@
 # neoncitylights/js-eco
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/neoncitylights/js-eco/.github%2Fworkflows%2Fnode.yml?style=flat-square)](https://github.com/neoncitylights/js-eco/blob/main/.github/workflows/node.yml)
+
 
 A comparison of tools within the JS ecosystem. It aims to compare/evaluate the following:
 - How the JavaScript ecosystem evolves over time
