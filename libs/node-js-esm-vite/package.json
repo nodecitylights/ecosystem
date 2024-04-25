@@ -1,0 +1,28 @@
+{
+	"private": true,
+	"version": "1.0.0",
+	"name": "node-js-esm-vite",
+	"description": "Node, JavaScript (ESM), Vite",
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "vite build",
+		"prepublint": "npm run build",
+		"publint": "publint ."
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.4",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.13",
+		"vite-plugin-dts": "^3.7.1"
+	}
+}
