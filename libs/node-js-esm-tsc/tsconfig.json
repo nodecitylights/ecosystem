@@ -1,0 +1,12 @@
+{
+	"include": ["src"],
+	"compilerOptions": {
+		"allowJs": true,
+		"declaration": true,
+		"declarationMap": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"outDir": "dist",
+		"sourceMap": true
+	}
+}
