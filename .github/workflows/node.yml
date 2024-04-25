@@ -35,6 +35,7 @@ jobs:
           - node-js-esm-rollup
           - node-js-esm-tsc
           - node-js-esm-vite
+          - node-js-esm-webpack
           - node-ts-esm-esbuild
           - node-ts-esm-parcel
           - node-ts-esm-rollup
