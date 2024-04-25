@@ -1,0 +1,33 @@
+{
+	"private": true,
+	"version": "1.0.0",
+	"name": "node-esbuild-js-esm",
+	"description": "Node, JavaScript (ESM), esbuild",
+	"keywords": [
+		"node",
+		"javascript",
+		"esm",
+		"esbuild"
+	],
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "npm run dts && node build.js",
+		"dts": "tsc",
+		"prepublint": "npm run build",
+		"publint": "publint ."
+	},
+	"devDependencies": {
+		"esbuild": "0.19.11",
+		"typescript": "^5.3.3"
+	}
+}

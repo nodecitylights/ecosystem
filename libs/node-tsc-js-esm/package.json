@@ -1,0 +1,31 @@
+{
+	"private": true,
+	"version": "1.0.0",
+	"name": "node-tsc-js-esm",
+	"description": "Node, JavaScript (ESM), TypeScript Compiler CLI",
+	"keywords": [
+		"node",
+		"javascript",
+		"esm",
+		"tsc"
+	],
+	"type": "module",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"prepublint": "npm run build",
+		"publint": "publint ."
+	},
+	"devDependencies": {
+		"typescript": "^5.3.3"
+	}
+}

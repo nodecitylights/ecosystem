@@ -33,13 +33,13 @@ At the moment, the top-level directories include:
 Each subdirectory name in the repository generally follows the naming convention below:
 
 ```txt
-{{runtime}}-{{module-system}}-{{language}}-{{tools+}}
+{{runtime}}-{{tool}}-{{language}}-{{module-system}}
 ```
 
 - `{{runtime}}`: JavaScript runtime implementation. Choices: `browser`, `node`, `deno`, `bun`
-- `{{module-system}}`: JavaScript module resolution strategy. Choices: `esm`, `cjs`, `umd`, `amd`
+- `{{tool}}`: build tool (e.g. Vite, Parcel, Webpack, esbuild, Rollup, Babel, etc.). If it does not use a build tool, it will say `native` (pure HTML/CSS/JS).
 - `{{language}}`: JavaScript language. Choices: `ts`, `js`
-- `{{tools+}}`: 1 or more build tools together (e.g. Vite, Parcel, Webpack, esbuild, Rollup, Babel, etc.). If it does not use a build tool, it will say `native` (pure HTML/CSS/JS).
+- `{{module-system}}`: JavaScript module resolution strategy. Choices: `esm`, `cjs`, `umd`, `amd`
 
 ## Types of tools
 
