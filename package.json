@@ -1,14 +1,22 @@
 {
 	"private": true,
+	"type": "module",
 	"workspaces": [
 		"libs/*"
 	],
 	"scripts": {
 		"build": "npm run build -ws --if-present",
 		"clean": "rm -rf ./node_modules && rm -rf ./package-lock.json",
+		"lint": "eslint libs",
+		"lint:fix": "npm run lint -- --fix",
 		"publint": "npm run publint -ws --if-present"
 	},
 	"devDependencies": {
-		"publint": "^0.2.7"
+		"@eslint/js": "^9.1.1",
+		"@stylistic/eslint-plugin": "^1.7.2",
+		"eslint": "^8.57.0",
+		"globals": "^15.0.0",
+		"publint": "^0.2.7",
+		"typescript-eslint": "^7.7.1"
 	}
 }

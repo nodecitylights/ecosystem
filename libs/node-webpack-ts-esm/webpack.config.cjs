@@ -1,5 +1,5 @@
-const path = require('path');
-const isProduction = process.env.NODE_ENV == 'production';
+const path = require('path')
+const isProduction = process.env.NODE_ENV == 'production'
 
 /** @type {import('webpack').Configuration} */
 const config = {
@@ -13,8 +13,8 @@ const config = {
 		filename: 'index.js',
 		clean: true,
 		library: {
-			type: 'module'
-		}
+			type: 'module',
+		},
 	},
 	module: {
 		rules: [
@@ -28,14 +28,14 @@ const config = {
 	resolve: {
 		extensions: ['.tsx', '.ts', '.jsx', '.js'],
 		extensionAlias: {
-			".js": [".js", ".ts"],
-			".cjs": [".cjs", ".cts"],
-			".mjs": [".mjs", ".mts"]
-		}
+			'.js': ['.js', '.ts'],
+			'.cjs': ['.cjs', '.cts'],
+			'.mjs': ['.mjs', '.mts'],
+		},
 	},
-};
+}
 
 module.exports = () => {
-	config.mode = isProduction ? 'production' : 'development';
-	return config;
-};
+	config.mode = isProduction ? 'production' : 'development'
+	return config
+}

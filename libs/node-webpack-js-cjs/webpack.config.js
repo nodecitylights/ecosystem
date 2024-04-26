@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
@@ -8,7 +8,7 @@ module.exports = {
 		filename: 'bundle.js',
 		library: {
 			name: 'greeting',
-			type: 'commonjs'
-		}
+			type: 'commonjs',
+		},
 	},
-};
+}

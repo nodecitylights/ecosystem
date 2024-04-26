@@ -18,6 +18,21 @@ on:
   workflow_dispatch:
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install Node.js (latest)
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+
   build-library:
     name: build (${{ matrix.workspace }})
     runs-on: ubuntu-latest
