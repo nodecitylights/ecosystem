@@ -7,7 +7,7 @@
 	"scripts": {
 		"build": "npm run build -ws --if-present",
 		"clean": "rm -rf ./node_modules && rm -rf ./package-lock.json",
-		"lint": "eslint libs",
+		"lint": "eslint .",
 		"lint:fix": "npm run lint -- --fix",
 		"publint": "npm run publint -ws --if-present"
 	},

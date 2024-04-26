@@ -1,7 +1,7 @@
-import eslint from '@eslint/js';
-import stylistic from '@stylistic/eslint-plugin';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
+import eslint from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
 	{
@@ -15,16 +15,19 @@ export default tseslint.config(
 	}),
 	// JavaScript
 	{
-		files: ['**/*.js'],
+		files: [
+			'./*.js',
+			'libs/**/*.js',
+		],
 		rules: eslint.configs.recommended.rules,
 		languageOptions: {
 			globals: {
 				...globals.node,
-			}
+			},
 		},
 		linterOptions: {
 			reportUnusedDisableDirectives: 'error',
-		}
+		},
 	},
 	// TypeScript
 	{
@@ -48,10 +51,10 @@ export default tseslint.config(
 			parser: tseslint.parser,
 			parserOptions: {
 				project: true,
-			}
+			},
 		},
 		linterOptions: {
 			reportUnusedDisableDirectives: 'error',
 		},
-	}
-);
+	},
+)
