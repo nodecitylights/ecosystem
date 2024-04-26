@@ -1,5 +1,5 @@
-const esbuild = require('esbuild');
-const build = esbuild.build;
+const esbuild = require('esbuild')
+const build = esbuild.build
 
 build({
 	entryPoints: ['src/index.js'],
@@ -7,4 +7,4 @@ build({
 	format: 'cjs',
 	external: [],
 	sourcemap: true,
-});
+})

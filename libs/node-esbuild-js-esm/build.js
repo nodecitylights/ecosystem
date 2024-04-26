@@ -1,4 +1,4 @@
-import { build } from 'esbuild';
+import { build } from 'esbuild'
 
 build({
 	entryPoints: ['src/index.js'],
@@ -6,4 +6,4 @@ build({
 	format: 'esm',
 	external: [],
 	sourcemap: true,
-});
+})
