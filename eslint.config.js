@@ -4,16 +4,16 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
+	{
+		ignores: ['**/dist/'],
+	},
 	stylistic.configs.customize({
-		// the following options are the default values
 		indent: 'tab',
 		quotes: 'single',
 		semi: false,
 		jsx: false,
 	}),
-	{
-		ignores: ['**/dist/'],
-	},
+	// JavaScript
 	{
 		files: ['**/*.js'],
 		rules: eslint.configs.recommended.rules,
@@ -26,6 +26,7 @@ export default tseslint.config(
 			reportUnusedDisableDirectives: 'error',
 		}
 	},
+	// TypeScript
 	{
 		files: [
 			'libs/node-esbuild-ts-esm/',
