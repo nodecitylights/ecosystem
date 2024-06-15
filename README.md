@@ -1,4 +1,4 @@
-# neoncitylights/js-eco
+# nodecitylights/ecosystem
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/neoncitylights/js-eco/.github%2Fworkflows%2Fnode.yml?style=flat-square)](https://github.com/neoncitylights/js-eco/blob/main/.github/workflows/node.yml)
