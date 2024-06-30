@@ -1,4 +1,5 @@
 {
+	"name": "@neoncitylights/ecosystem",
 	"private": true,
 	"type": "module",
 	"workspaces": [
